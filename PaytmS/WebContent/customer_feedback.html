@@ -1,0 +1,152 @@
+﻿
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>EbixCash e-Wallet</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PayOnWeb, PowerToWeb, EbixCash">
+    <meta name="author" content="Itzcash">
+    <!-- Le styles -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+	<link href="../css/dropdown_menu.css" media="screen" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/5BE9CB54-F3BF-B949-A7C4-F0DC06900A37/main.js" charset="UTF-8"></script><script type="text/javascript" src="../js/dropdown_menu.js"></script>
+  </head>
+  <body>
+    <h1 style="font-family:Comic sans MS;"><center>DigiChips</center></h1>
+    <div class="navbar">
+      <div class="top"></div>
+      <div class="header">      
+        <div id="iNavLogo"><a accesskey="0" title="" href=../jsp/Menu.jsp><img class="Logo" title="" alt="" src="../images/logo2.png" /></a></div>
+        <div class="top-link">
+        <ul>
+        
+			<li id="logout"><a href="./login.html" class="btn btn-warning">LogOut</a></li>
+        
+        </ul>
+        </div>
+        </div>  
+      
+    </div>
+
+   
+	
+
+<script type="text/javascript">
+function check()
+{
+
+        // Type
+        if(document.feedback.type.value=="")
+        {
+                alert("Please select a valid feedback type.");
+                document.feedback.type.value="1";
+                document.feedback.type.focus();
+                return false;
+        }
+
+
+	//Comments
+	if(document.feedback.comments.value=="")
+	{
+		alert("Please share some additional details about your feedback.");
+		document.feedback.comments.value="";
+		document.feedback.comments.focus();
+		return false;
+	}
+
+	return true;
+}
+</script>
+
+<div class="hero-unit">   
+
+
+
+	 <div class="row-fluid form_contener">
+
+<form name="feedback" method="post" action="../servlet/UserFeedbackServlet" autocomplete="off" onSubmit="return check()" class="form-horizontal">
+<legend>Customer Feedback</legend>
+
+
+
+<p>Please enter the following details</p>
+
+<fieldset>
+		<div class="control-group">
+		     	    	<label class="control-label">Feedback Type: </label>
+		         		<div class="controls">
+		         			<select class="formbox" name="type">
+		         			
+<option value="COMMON.1" selected>My online transaction got declined</option>
+
+<option value="COMMON.2">I want to correct my profile details</option>
+
+<option value="COMMON.3">Problem while changing my PIN</option>
+
+<option value="COMMON.4">I want to report a problem with your site</option>
+
+<option value="COMMON.5">I want a customer care executive to contact me</option>
+
+<option value="OTHER.1">Any other feedback/query</option>
+</select>
+		         		</div> 
+		      		</div>
+		      		
+</fieldset>
+
+
+<div class="control-group">
+		     	    	<label class="control-label">Comments: </label>
+		         		<div class="controls">
+		         			<textarea name="comments" rows="6" cols="40"></textarea>
+		         		</div> 
+		      		</div>
+
+
+
+<div class="control-group">        		        
+		          		<div class="controls">
+		          		<input type="submit" name="submit" value="Submit" class="btn btn-warning">
+                		<input type="reset" name="submit" value="Reset" class="btn btn-warning">
+		          		</div> 
+		    	</div>   
+
+<input type="hidden" name="session1" value="-6825610919672444684">
+<input type="hidden" name="session2" value="3642832919340107968">
+</form>
+</div>
+</div>
+</div>
+
+
+</div>
+      </div><!--/row-->
+
+      <!--<footer>
+        <p>&copy; Company 2012</p>
+      </footer>-->
+
+    </div><!--/.fluid-container-->
+
+<!-- InstanceEndEditable --> 
+<!--footer-->
+ </body><!-- InstanceEnd --></html>
+
