@@ -55,9 +55,6 @@ CREATE TABLE IF NOT EXISTS request_record(
 ALTER TABLE bank_record ADD CONSTRAINT fk_from_user FOREIGN KEY (to_user) REFERENCES user_account(mobile_no);
 --ALTER TABLE passbook ADD CONSTRAINT fk_from_user FOREIGN KEY (from_user) REFERENCES user_account(mobile_no);
 
---insert statements
-
-insert into user_account (user_id, user_name, email, mobile_no, password, balance) values(11, 'anurag', 'anu@email.com', 9999, '18b723e90bad48e2e454d7dc2964d9bf28b58c34d3a4e6f9d10352698cfc94fb', 500), (12, 'vaidehi', 'vaidehi@gmail.com', 7899, '766d2937ee749408b5b44099bfa87b83d1d02817b70b1b458659f02d829fa7e9', 120), (13, 'ventak', 'ventak@yahoo.com', 7869, '8396a49345b0f6f6eaea5fc9864f29dfecab3bccafbd5e6b9d4a833534779c75', 20), (14, 'aish', 'aish@amail.com', 7709, 'e23c74dedd0aa9043e9118bd7d9840096a1302ff376748c90832767c309eeca0', 40);
 
 
 -- anurag 123456 18b723e90bad48e2e454d7dc2964d9bf28b58c34d3a4e6f9d10352698cfc94fb 
